@@ -1,0 +1,37 @@
+{
+  "name": "kysely-supabase",
+  "version": "0.1.0",
+  "description": "Kysely dialect for supabase-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.42.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/chai": "^4.3.14",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.4",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "chai": "^4",
+    "esbuild": "^0.20.2",
+    "esbuild-runner": "^2.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "kysely": "^0.27.3",
+    "mocha": "^10.4.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-pkg": "^0.18.1",
+    "supabase": "^1.153.4",
+    "tsd": "^0.31.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  }
+}
