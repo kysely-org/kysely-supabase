@@ -1,14 +1,45 @@
 {
   "name": "kysely-supabase",
   "version": "0.1.0",
-  "description": "Kysely dialect for supabase-js",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Kysely dialect for Supabase",
+  "repository": "https://github.com/kysely-org/kysely-supabase.git",
+  "homepage": "https://github.com/kysely-org/kysely-supabase",
+  "author": "Igal Klebanov <igalklebanov@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "kysely",
+    "supabase",
+    "postgres",
+    "postgresql",
+    "dialect"
+  ],
+  "scripts": {
+    "build": "tsup && node ./scripts/dist-fix.js",
+    "clean": "rm -rf dist",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "lint": "eslint src --ext .ts",
+    "prepack": "pnpm lint && pnpm build",
+    "test": "pnpm build && pnpm test:nodejs",
+    "test:nodejs": "mocha ./tests/nodejs",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@supabase/supabase-js": ">= 2.0.0 < 3",
+    "kysely": ">= 0.24.0 < 1",
+    "supabase": ">= 1.0.0 < 2"
+  },
   "devDependencies": {
     "@supabase/supabase-js": "^2.42.0",
     "@tsconfig/node20": "^20.1.4",
@@ -17,7 +48,7 @@
     "@types/node": "^20.12.4",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
-    "chai": "^4",
+    "chai": "^4.4.1",
     "esbuild": "^0.20.2",
     "esbuild-runner": "^2.2.2",
     "eslint": "^8.57.0",
@@ -33,5 +64,6 @@
     "tsd": "^0.31.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.4"
-  }
+  },
+  "sideEffects": false
 }

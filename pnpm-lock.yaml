@@ -27,7 +27,7 @@ devDependencies:
     specifier: ^7.5.0
     version: 7.5.0(eslint@8.57.0)(typescript@5.4.4)
   chai:
-    specifier: ^4
+    specifier: ^4.4.1
     version: 4.4.1
   esbuild:
     specifier: ^0.20.2
