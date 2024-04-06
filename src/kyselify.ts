@@ -1,6 +1,10 @@
 import type {ColumnType} from 'kysely'
 
-export type KyselifyDatabase<Database> = keyof Database extends 'public'
+type SupabaseInternalSchemas = 'graphql_public' | 'storage'
+
+export type KyselifyDatabase<Database> = keyof Database extends
+  | 'public'
+  | SupabaseInternalSchemas
   ? KyselifySingleSchemaDatabase<Database>
   : KyselifyMultiSchemaDatabase<Database>
 
@@ -26,15 +30,20 @@ export type KyselifyMultiSchemaDatabase<Database> = {
 }
 
 export type SchemafulTableNames<Database> = {
-  [Schema in keyof Database]: 'Tables' extends keyof Database[Schema]
+  [Schema in Exclude<
+    keyof Database,
+    SupabaseInternalSchemas
+  >]: 'Tables' extends keyof Database[Schema]
     ? `${Schema & string}.${keyof Database[Schema]['Tables'] & string}`
     : never
-}[keyof Database]
+}[Exclude<keyof Database, SupabaseInternalSchemas>]
 
 export type KyselifyTable<Table> = 'Row' extends keyof Table
   ? {
       [Column in keyof Table['Row']]: ColumnType<
-        Table['Row'][Column],
+        undefined extends Table['Row'][Column]
+          ? Exclude<Table['Row'][Column], undefined> | null
+          : Table['Row'][Column],
         'Insert' extends keyof Table
           ? Column extends keyof Table['Insert']
             ? Table['Insert'][Column]
