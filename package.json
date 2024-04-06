@@ -1,7 +1,7 @@
 {
   "name": "kysely-supabase",
   "version": "0.1.0",
-  "description": "Kysely dialect for Supabase",
+  "description": "Kysely type translators for Supabase",
   "repository": "https://github.com/kysely-org/kysely-supabase.git",
   "homepage": "https://github.com/kysely-org/kysely-supabase",
   "author": "Igal Klebanov <igalklebanov@gmail.com>",
@@ -22,17 +22,19 @@
     "supabase",
     "postgres",
     "postgresql",
-    "dialect"
+    "typescript",
+    "types"
   ],
   "scripts": {
     "build": "tsup && node ./scripts/dist-fix.js",
     "clean": "rm -rf dist",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
+    "init:db": "supabase start && supabase db reset && supabase gen types typescript --local > schema.gen.ts",
     "lint": "eslint src --ext .ts",
     "prepack": "pnpm lint && pnpm build",
-    "test": "pnpm build && pnpm test:nodejs",
-    "test:nodejs": "mocha ./tests/nodejs",
+    "test": "pnpm build && pnpm test:typings",
+    "test:typings": "tsd tests/typings",
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -48,21 +50,19 @@
     "@types/node": "^20.12.4",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
-    "chai": "^4.4.1",
     "esbuild": "^0.20.2",
-    "esbuild-runner": "^2.2.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
     "kysely": "^0.27.3",
-    "mocha": "^10.4.0",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-pkg": "^0.18.1",
     "supabase": "^1.153.4",
     "tsd": "^0.31.0",
     "tsup": "^8.0.2",
+    "type-fest": "^4.15.0",
     "typescript": "^5.4.4"
   },
   "sideEffects": false
