@@ -52,11 +52,29 @@ Create a Kysely instance. Pass to it your `Database` type.
 
 ```ts
 import {Kysely, PostgresDialect} from 'kysely'
+import {Pool} from 'pg'
 import type {Database} from './types/database'
 
 export const kysely = new Kysely<Database>({
   dialect: new PostgresDialect({
-    ...
+    pool: new Pool({
+      connectionString: process.env.DATABASE_URL
+    })
+  })
+})
+```
+
+or when using `postgres` instead of `pg` as the underlying driver:
+
+```ts
+import {Kysely} from 'kysely'
+import {PostgresJSDialect} from 'kysely-postgres-js'
+import postgres from 'postgres'
+import type {Database} from './types/database'
+
+export const kysely = new Kysely<Database>({
+  dialect: new PostgresJSDialect({
+    postgres: postgres(process.env.DATABASE_URL)
   })
 })
 ```
