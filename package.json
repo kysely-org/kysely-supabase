@@ -63,7 +63,7 @@
     "tsd": "^0.31.0",
     "tsup": "^8.0.2",
     "type-fest": "^4.15.0",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "sideEffects": false
 }
