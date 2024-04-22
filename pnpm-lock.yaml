@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^0.18.1
     version: 0.18.1(prettier@3.2.5)
   supabase:
-    specifier: ^1.162.4
-    version: 1.162.4
+    specifier: ^1.163.2
+    version: 1.163.2
   tsd:
     specifier: ^0.31.0
     version: 0.31.0
@@ -3354,8 +3354,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: true
 
-  /supabase@1.162.4:
-    resolution: {integrity: sha512-oNTn2eyvDLcKr4wRDs/QxN9lVcO6hMzKUjMLtDMU700WuyOpBZ6YBsAZkPlFWyodwmH/jUX2jqTMpcHL2XRv0g==}
+  /supabase@1.163.2:
+    resolution: {integrity: sha512-mA/lhdNsEk9HEF72HbHzpm4EO39TKw2rChizcp8+dwFhaa2ex/jvkLHXujAuPjsZMXgQzRvUj4ltHsY0Z1cUlA==}
     engines: {npm: '>=8'}
     hasBin: true
     requiresBuild: true
