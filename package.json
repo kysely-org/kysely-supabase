@@ -59,7 +59,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-pkg": "^0.18.1",
-    "supabase": "^1.164.1",
+    "supabase": "^1.165.0",
     "tsd": "^0.31.0",
     "tsup": "^8.0.2",
     "type-fest": "^4.18.1",
