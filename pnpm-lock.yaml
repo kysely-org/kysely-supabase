@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^0.18.1
     version: 0.18.1(prettier@3.3.1)
   supabase:
-    specifier: ^1.172.2
-    version: 1.172.2
+    specifier: ^1.176.4
+    version: 1.176.4
   tsd:
     specifier: ^0.31.0
     version: 0.31.0
@@ -331,7 +331,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.5
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -353,7 +353,7 @@ packages:
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.4
+      debug: 4.3.5
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3119,8 +3119,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: true
 
-  /supabase@1.172.2:
-    resolution: {integrity: sha512-h2J6kKEikXnZyurUcCYg215qkQpINOhdWkiclHcWAuVeqXsNrfrYaf1s0qbbcdRyMtrVW48I+VdVTw71Cnn20Q==}
+  /supabase@1.176.4:
+    resolution: {integrity: sha512-Y7r5RDs+6+WyFPrmBB4Zmcfz0A4WrU0+hJPspgW9ZjRkho9gpRnxIknV4bExYAclm12gbLDU5gc/TDhjE5dVTg==}
     engines: {npm: '>=8'}
     hasBin: true
     requiresBuild: true
