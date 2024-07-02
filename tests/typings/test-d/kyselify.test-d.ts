@@ -129,6 +129,91 @@ function testMultiSchemaDatabase() {
     }
   >
   type Expected = {
+    person: {
+      id: ColumnType<number, number | undefined, number | undefined>
+      first_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      middle_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      last_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      gender: ColumnType<string, string, string | undefined>
+      marital_status: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      children: ColumnType<number, number | undefined, number | undefined>
+    }
+    pet: {
+      id: ColumnType<number, number | undefined, number | undefined>
+      name: ColumnType<string, string, string | undefined>
+      species: ColumnType<string, string, string | undefined>
+      owner_id: ColumnType<number, number, number | undefined>
+    }
+    toy: {
+      id: ColumnType<number, number | undefined, number | undefined>
+      name: ColumnType<string, string, string | undefined>
+      pet_id: ColumnType<number, number, number | undefined>
+    }
+  } & {
+    person_owners: {
+      id: ColumnType<
+        number | null,
+        number | null | undefined,
+        number | null | undefined
+      >
+      first_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      middle_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      last_name: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      gender: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      marital_status: ColumnType<
+        string | null,
+        string | null | undefined,
+        string | null | undefined
+      >
+      children: ColumnType<
+        number | null,
+        number | null | undefined,
+        number | null | undefined
+      >
+    }
+    person_owners_and_num_of_pets: {
+      id: ColumnType<number | null, never, never>
+      first_name: ColumnType<string | null, never, never>
+      middle_name: ColumnType<string | null, never, never>
+      last_name: ColumnType<string | null, never, never>
+      gender: ColumnType<string | null, never, never>
+      marital_status: ColumnType<string | null, never, never>
+      children: ColumnType<number | null, never, never>
+      num_of_pets: ColumnType<number | null, never, never>
+    }
+  } & {
     'public.person': {
       id: ColumnType<number, number | undefined, number | undefined>
       first_name: ColumnType<
@@ -236,6 +321,16 @@ function testMultiSchemaDatabase() {
     }
   }
 
+  expectType<IsEqual<Actual['person'], Expected['person']>>(true)
+  expectType<IsEqual<Actual['pet'], Expected['pet']>>(true)
+  expectType<IsEqual<Actual['toy'], Expected['toy']>>(true)
+  expectType<IsEqual<Actual['person_owners'], Expected['person_owners']>>(true)
+  expectType<
+    IsEqual<
+      Actual['person_owners_and_num_of_pets'],
+      Expected['person_owners_and_num_of_pets']
+    >
+  >(true)
   expectType<IsEqual<Actual['public.person'], Expected['public.person']>>(true)
   expectType<IsEqual<Actual['public.pet'], Expected['public.pet']>>(true)
   expectType<IsEqual<Actual['public.toy'], Expected['public.toy']>>(true)
