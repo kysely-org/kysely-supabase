@@ -15,27 +15,38 @@ export type KyselifySingleSchemaDatabase<Database> =
           [TableName in keyof Database['public']['Tables']]: KyselifyTable<
             Database['public']['Tables'][TableName]
           >
-        }
+        } & ('Views' extends keyof Database['public']
+          ? {
+              [ViewName in keyof Database['public']['Views']]: KyselifyTable<
+                Database['public']['Views'][ViewName]
+              >
+            }
+          : never)
       : never
     : never
 
 export type KyselifyMultiSchemaDatabase<Database> = {
-  [SchemafulTableName in SchemafulTableNames<Database>]: SchemafulTableName extends `${infer Schema extends keyof Database & string}.${infer TableName}`
+  [SchemafulTableOrViewName in SchemafulTableAndViewNames<Database>]: SchemafulTableOrViewName extends `${infer Schema extends keyof Database & string}.${infer TableOrViewName}`
     ? 'Tables' extends keyof Database[Schema]
-      ? TableName extends keyof Database[Schema]['Tables']
-        ? KyselifyTable<Database[Schema]['Tables'][TableName]>
-        : never
+      ? TableOrViewName extends keyof Database[Schema]['Tables']
+        ? KyselifyTable<Database[Schema]['Tables'][TableOrViewName]>
+        : 'Views' extends keyof Database[Schema]
+          ? TableOrViewName extends keyof Database[Schema]['Views']
+            ? KyselifyTable<Database[Schema]['Views'][TableOrViewName]>
+            : never
+          : never
       : never
     : never
 }
 
-export type SchemafulTableNames<Database> = {
-  [Schema in Exclude<
-    keyof Database,
-    SupabaseInternalSchemas
-  >]: 'Tables' extends keyof Database[Schema]
-    ? `${Schema & string}.${keyof Database[Schema]['Tables'] & string}`
-    : never
+export type SchemafulTableAndViewNames<Database> = {
+  [Schema in Exclude<keyof Database, SupabaseInternalSchemas>]:
+    | ('Tables' extends keyof Database[Schema]
+        ? `${Schema & string}.${keyof Database[Schema]['Tables'] & string}`
+        : never)
+    | ('Views' extends keyof Database[Schema]
+        ? `${Schema & string}.${keyof Database[Schema]['Views'] & string}`
+        : never)
 }[Exclude<keyof Database, SupabaseInternalSchemas>]
 
 export type KyselifyTable<Table> = 'Row' extends keyof Table
