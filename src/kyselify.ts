@@ -6,7 +6,8 @@ export type KyselifyDatabase<Database> = keyof Database extends
   | 'public'
   | SupabaseInternalSchemas
   ? KyselifySingleSchemaDatabase<Database>
-  : KyselifyMultiSchemaDatabase<Database>
+  : KyselifySingleSchemaDatabase<Database> &
+      KyselifyMultiSchemaDatabase<Database>
 
 export type KyselifySingleSchemaDatabase<Database> =
   'public' extends keyof Database
