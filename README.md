@@ -23,7 +23,7 @@ For PostgreSQL:
 npm i pg
 ```
 
-or 
+or
 
 ```sh
 npm i kysely-postgres-js postgres
@@ -58,9 +58,9 @@ import type {Database} from './types/database'
 export const kysely = new Kysely<Database>({
   dialect: new PostgresDialect({
     pool: new Pool({
-      connectionString: process.env.DATABASE_URL
-    })
-  })
+      connectionString: process.env.DATABASE_URL,
+    }),
+  }),
 })
 ```
 
@@ -74,8 +74,8 @@ import type {Database} from './types/database'
 
 export const kysely = new Kysely<Database>({
   dialect: new PostgresJSDialect({
-    postgres: postgres(process.env.DATABASE_URL)
-  })
+    postgres: postgres(process.env.DATABASE_URL),
+  }),
 })
 ```
 
