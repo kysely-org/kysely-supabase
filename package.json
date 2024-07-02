@@ -1,6 +1,6 @@
 {
   "name": "kysely-supabase",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Kysely type translators for Supabase",
   "repository": "https://github.com/kysely-org/kysely-supabase.git",
   "homepage": "https://github.com/kysely-org/kysely-supabase",
