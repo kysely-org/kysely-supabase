@@ -63,8 +63,8 @@ importers:
         specifier: ^0.31.1
         version: 0.31.1
       tsup:
-        specifier: ^8.1.2
-        version: 8.1.2(typescript@5.5.3)
+        specifier: ^8.2.0
+        version: 8.2.0(typescript@5.5.3)
       type-fest:
         specifier: ^4.22.1
         version: 4.22.1
@@ -1848,8 +1848,8 @@ packages:
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
-  tsup@8.1.2:
-    resolution: {integrity: sha512-Gzw/PXSX/z0aYMNmkcI54bKKFVFJQbLne+EqTJZeQ3lNT3QpumjtMU4rl+ZwTTp8oRF3ahMbEAxT2sZPJLFSrg==}
+  tsup@8.2.0:
+    resolution: {integrity: sha512-XoarnVlfXxbv8ODHtxUq8D2XPc9luX+pamnp1kHSKLknKCDcX0Rkc21NHdbpugH6hKoNiETXypKKVgVu46vVRg==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -3825,7 +3825,7 @@ snapshots:
 
   tslib@2.6.2: {}
 
-  tsup@8.1.2(typescript@5.5.3):
+  tsup@8.2.0(typescript@5.5.3):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
