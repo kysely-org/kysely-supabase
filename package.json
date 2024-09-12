@@ -46,7 +46,7 @@
     "@supabase/supabase-js": "^2.45.4",
     "@tsconfig/node20": "^20.1.4",
     "@types/chai": "^4.3.19",
-    "@types/mocha": "^10.0.7",
+    "@types/mocha": "^10.0.8",
     "@types/node": "^22.5.4",
     "@typescript-eslint/eslint-plugin": "^8.5.0",
     "@typescript-eslint/parser": "^8.5.0",
