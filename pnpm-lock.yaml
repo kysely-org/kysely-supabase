@@ -21,8 +21,8 @@ importers:
         specifier: ^10.0.8
         version: 10.0.8
       '@types/node':
-        specifier: ^22.5.5
-        version: 22.5.5
+        specifier: ^22.6.0
+        version: 22.6.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.7.0
         version: 8.7.0(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)
@@ -595,8 +595,8 @@ packages:
   '@types/mocha@10.0.8':
     resolution: {integrity: sha512-HfMcUmy9hTMJh66VNcmeC9iVErIZJli2bszuXc6julh5YGuRb/W5OnkHjwLNYdFlMis0sY3If5SEAp+PktdJjw==}
 
-  '@types/node@22.5.5':
-    resolution: {integrity: sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==}
+  '@types/node@22.6.0':
+    resolution: {integrity: sha512-QyR8d5bmq+eR72TwQDfujwShHMcIrWIYsaQFtXRE58MHPTEKUNxjxvl0yS0qPMds5xbSDWtp7ZpvGFtd7dfMdQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2522,7 +2522,7 @@ snapshots:
 
   '@types/mocha@10.0.8': {}
 
-  '@types/node@22.5.5':
+  '@types/node@22.6.0':
     dependencies:
       undici-types: 6.19.6
 
@@ -2532,7 +2532,7 @@ snapshots:
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 22.5.5
+      '@types/node': 22.6.0
 
   '@typescript-eslint/eslint-plugin@8.7.0(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)':
     dependencies:
