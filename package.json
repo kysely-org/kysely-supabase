@@ -61,7 +61,7 @@
     "prettier-plugin-pkg": "^0.18.1",
     "supabase": "^1.207.9",
     "tsd": "^0.31.2",
-    "tsup": "^8.3.0",
+    "tsup": "^8.3.4",
     "type-fest": "^4.26.1",
     "typescript": "^5.6.3"
   },
