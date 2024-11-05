@@ -57,8 +57,8 @@ importers:
         specifier: ^0.18.1
         version: 0.18.1(prettier@3.3.3)
       supabase:
-        specifier: ^1.207.9
-        version: 1.207.9
+        specifier: ^1.215.0
+        version: 1.215.0
       tsd:
         specifier: ^0.31.2
         version: 0.31.2
@@ -1740,8 +1740,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  supabase@1.207.9:
-    resolution: {integrity: sha512-BJPwsAd2UBIpQawcQV3/xKHEZ8YrrkHYpgibxCZbG+RuxuhTtkHG7zR4I3LylIIEwcKp3hmDKu/hO1m2NT5RXA==}
+  supabase@1.215.0:
+    resolution: {integrity: sha512-ITHqEnDl3F/b44AYdBUSzinqZhmGxrx205Yt2HfyaVTd5W/JppF3/naqVPIdRiUZBBLKkvfQO/wUk48W8SoVxw==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -3677,7 +3677,7 @@ snapshots:
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
 
-  supabase@1.207.9:
+  supabase@1.215.0:
     dependencies:
       bin-links: 5.0.0
       https-proxy-agent: 7.0.4
