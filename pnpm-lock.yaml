@@ -15,8 +15,8 @@ importers:
         specifier: ^20.1.4
         version: 20.1.4
       '@types/chai':
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.2.0
+        version: 5.2.0
       '@types/mocha':
         specifier: ^10.0.10
         version: 10.0.10
@@ -461,8 +461,8 @@ packages:
     resolution: {integrity: sha512-sqE6Rz9UNHBuCtuREo/PwsuUaegP1KDSfxMd+9K1qPpt7XO8BmkIImUp7zAqyvwXWUHs+sj6osEkkpyE0tFgfA==}
     engines: {node: '>=14.17'}
 
-  '@types/chai@5.0.1':
-    resolution: {integrity: sha512-5T8ajsg3M/FOncpLYW7sdOcD6yf4+722sze/tc4KQV0P8Z2rAr3SAuHCIkYmYpt8VbcQlnz8SxlOlPQYefe4cA==}
+  '@types/chai@5.2.0':
+    resolution: {integrity: sha512-FWnQYdrG9FAC8KgPVhDFfrPL1FBsL3NtIt2WsxKvwu/61K6HiuDF3xAb7c7w/k9ML2QOUHcwTgU7dKLFPK6sBg==}
 
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
@@ -2298,7 +2298,7 @@ snapshots:
 
   '@tsd/typescript@5.4.4': {}
 
-  '@types/chai@5.0.1':
+  '@types/chai@5.2.0':
     dependencies:
       '@types/deep-eql': 4.0.2
 
