@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@supabase/supabase-js": "^2.49.2",
-    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/node20": "^20.1.5",
     "@types/chai": "^5.2.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.13.14",
