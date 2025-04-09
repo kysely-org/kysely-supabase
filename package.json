@@ -60,7 +60,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-pkg": "^0.19.0",
     "supabase": "^2.20.12",
-    "tsd": "^0.31.2",
+    "tsd": "^0.32.0",
     "tsup": "^8.4.0",
     "type-fest": "^4.39.1",
     "typescript": "^5.8.3"
