@@ -45,8 +45,8 @@ importers:
         specifier: ^5.2.6
         version: 5.2.6(eslint-config-prettier@10.1.2(eslint@8.57.1))(eslint@8.57.1)(prettier@3.5.3)
       kysely:
-        specifier: ^0.28.0
-        version: 0.28.0
+        specifier: ^0.28.1
+        version: 0.28.1
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -1279,8 +1279,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  kysely@0.28.0:
-    resolution: {integrity: sha512-hq8VcLy57Ww7oPTTVEOrT9ml+g8ehbbmEUkHmW4Xtubu+NHdKZi6SH6egmD4cjDhn3b/0s0h/6AjdPayOTJhNw==}
+  kysely@0.28.1:
+    resolution: {integrity: sha512-umkhsHB0y2JvI83DUtuYYTfvr063xTHTcr/k1z0E2Bg39zGiBcdDvlbP79YMcItn55pKQtD120sZmKa9jhCVtw==}
     engines: {node: '>=18.0.0'}
 
   levn@0.4.1:
@@ -1386,6 +1386,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@3.3.2:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
@@ -3215,7 +3216,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  kysely@0.28.0: {}
+  kysely@0.28.1: {}
 
   levn@0.4.1:
     dependencies:
