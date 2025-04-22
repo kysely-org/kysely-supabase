@@ -62,7 +62,7 @@
     "supabase": "^2.20.12",
     "tsd": "^0.32.0",
     "tsup": "^8.4.0",
-    "type-fest": "^4.39.1",
+    "type-fest": "^4.40.0",
     "typescript": "^5.8.3"
   },
   "sideEffects": false,
