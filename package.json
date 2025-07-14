@@ -43,7 +43,7 @@
     "supabase": ">= 1.0.0 < 2"
   },
   "devDependencies": {
-    "@supabase/supabase-js": "^2.50.5",
+    "@supabase/supabase-js": "^2.51.0",
     "@tsconfig/node20": "^20.1.6",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
