@@ -57,7 +57,7 @@
     "eslint-plugin-prettier": "^5.5.3",
     "kysely": "^0.28.3",
     "prettier": "^3.6.2",
-    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-organize-imports": "^4.2.0",
     "prettier-plugin-pkg": "^0.21.2",
     "supabase": "^2.31.4",
     "tsd": "^0.32.0",
