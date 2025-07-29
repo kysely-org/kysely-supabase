@@ -57,8 +57,8 @@ importers:
         specifier: ^0.21.2
         version: 0.21.2(prettier@3.6.2)
       supabase:
-        specifier: ^2.31.8
-        version: 2.31.8
+        specifier: ^2.33.5
+        version: 2.33.5
       tsd:
         specifier: ^0.32.0
         version: 0.32.0
@@ -1824,6 +1824,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   spdx-correct@3.2.0:
     resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
@@ -1886,8 +1887,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  supabase@2.31.8:
-    resolution: {integrity: sha512-AsALbB9qKqUhu5A8gZK5VMR2SPo2DPP7W544MBk7JKfLo3Pi8YoAxGxx5skarfeqDtHkzEREU/seFIaYP/bl3A==}
+  supabase@2.33.5:
+    resolution: {integrity: sha512-R8Q1KxULxismNfl0Pr5n24aDxDNh3TIlsigzPT1QvWaWYQj1nKrkJuZ/pPq9p56sk3DZ55AWamyOqS8OmsEDwA==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -4026,7 +4027,7 @@ snapshots:
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
-  supabase@2.31.8:
+  supabase@2.33.5:
     dependencies:
       bin-links: 5.0.0
       https-proxy-agent: 7.0.6
