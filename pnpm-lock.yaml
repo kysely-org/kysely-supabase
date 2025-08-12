@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@supabase/supabase-js':
-        specifier: ^2.54.0
-        version: 2.54.0
+        specifier: ^2.55.0
+        version: 2.55.0
       '@tsconfig/node20':
         specifier: ^20.1.6
         version: 20.1.6
@@ -452,14 +452,14 @@ packages:
   '@supabase/postgrest-js@1.19.4':
     resolution: {integrity: sha512-O4soKqKtZIW3olqmbXXbKugUtByD2jPa8kL2m2c1oozAO11uCcGrRhkZL0kVxjBLrXHE0mdSkFsMj7jDSfyNpw==}
 
-  '@supabase/realtime-js@2.15.0':
-    resolution: {integrity: sha512-SEIWApsxyoAe68WU2/5PCCuBwa11LL4Bb8K3r2FHCt3ROpaTthmDiWEhnLMGayP05N4QeYrMk0kyTZOwid/Hjw==}
+  '@supabase/realtime-js@2.15.1':
+    resolution: {integrity: sha512-edRFa2IrQw50kNntvUyS38hsL7t2d/psah6om6aNTLLcWem0R6bOUq7sk7DsGeSlNfuwEwWn57FdYSva6VddYw==}
 
-  '@supabase/storage-js@2.10.4':
-    resolution: {integrity: sha512-cvL02GarJVFcNoWe36VBybQqTVRq6wQSOCvTS64C+eyuxOruFIm1utZAY0xi2qKtHJO3EjKaj8iWJKySusDmAQ==}
+  '@supabase/storage-js@2.10.5':
+    resolution: {integrity: sha512-9O7DfVI+v+exwPIKFGlCn2gigx441ojHnJ5QpHPegvblPdZQnnmCrL+A0JHj7wD/e+f9fnLu/DBKAtLYrLtftw==}
 
-  '@supabase/supabase-js@2.54.0':
-    resolution: {integrity: sha512-DLw83YwBfAaFiL3oWV26+sHRdeCGtxmIKccjh/Pndze3BWM4fZghzYKhk3ElOQU8Bluq4AkkCJ5bM5Szl/sfRg==}
+  '@supabase/supabase-js@2.55.0':
+    resolution: {integrity: sha512-Y1uV4nEMjQV1x83DGn7+Z9LOisVVRlY1geSARrUHbXWgbyKLZ6/08dvc0Us1r6AJ4tcKpwpCZWG9yDQYo1JgHg==}
 
   '@tsconfig/node20@20.1.6':
     resolution: {integrity: sha512-sz+Hqx9zwZDpZIV871WSbUzSqNIsXzghZydypnfgzPKLltVJfkINfUeTct31n/tTSa9ZE1ZOfKdRre1uHHquYQ==}
@@ -2388,7 +2388,7 @@ snapshots:
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
-  '@supabase/realtime-js@2.15.0':
+  '@supabase/realtime-js@2.15.1':
     dependencies:
       '@supabase/node-fetch': 2.6.15
       '@types/phoenix': 1.6.6
@@ -2398,18 +2398,18 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@supabase/storage-js@2.10.4':
+  '@supabase/storage-js@2.10.5':
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
-  '@supabase/supabase-js@2.54.0':
+  '@supabase/supabase-js@2.55.0':
     dependencies:
       '@supabase/auth-js': 2.71.1
       '@supabase/functions-js': 2.4.5
       '@supabase/node-fetch': 2.6.15
       '@supabase/postgrest-js': 1.19.4
-      '@supabase/realtime-js': 2.15.0
-      '@supabase/storage-js': 2.10.4
+      '@supabase/realtime-js': 2.15.1
+      '@supabase/storage-js': 2.10.5
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
