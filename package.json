@@ -35,15 +35,12 @@
   "scripts": {
     "build": "tsup",
     "check:exports": "attw --pack .",
-    "clean": "rm -rf dist",
-    "fmt": "prettier --write .",
-    "fmt:check": "prettier --check .",
+    "check:types": "tsc --noEmit",
     "init:db": "supabase start && supabase db reset && supabase gen types typescript --local > schema.gen.ts",
     "lint": "eslint src --ext .ts",
     "prepublishOnly": "pnpm lint && pnpm build && pnpm check:exports",
     "test": "pnpm build && pnpm test:typings",
-    "test:typings": "tsd tests/typings",
-    "type-check": "tsc --noEmit"
+    "test:typings": "tsd tests/typings"
   },
   "peerDependencies": {
     "@supabase/supabase-js": ">= 2.0.0 < 3",
