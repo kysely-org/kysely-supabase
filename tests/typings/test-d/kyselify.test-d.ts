@@ -39,6 +39,15 @@ function testSingleSchemaDatabase() {
 			species: ColumnType<string, string, string | undefined>
 			owner_id: ColumnType<number, number, number | undefined>
 		}
+		statuses: {
+			id: ColumnType<number, number | undefined, number | undefined>
+			name: ColumnType<string, string, string | undefined>
+			status: ColumnType<
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending' | undefined
+			>
+		}
 		toy: {
 			id: ColumnType<number, number | undefined, number | undefined>
 			name: ColumnType<string, string, string | undefined>
@@ -96,6 +105,7 @@ function testSingleSchemaDatabase() {
 
 	expectType<IsEqual<Actual['person'], Expected['person']>>(true)
 	expectType<IsEqual<Actual['pet'], Expected['pet']>>(true)
+	expectType<IsEqual<Actual['statuses'], Expected['statuses']>>(true)
 	expectType<IsEqual<Actual['toy'], Expected['toy']>>(true)
 	expectType<IsEqual<Actual['person_owners'], Expected['person_owners']>>(true)
 	expectType<
@@ -161,6 +171,15 @@ function testMultiSchemaDatabase() {
 			name: ColumnType<string, string, string | undefined>
 			species: ColumnType<string, string, string | undefined>
 			owner_id: ColumnType<number, number, number | undefined>
+		}
+		statuses: {
+			id: ColumnType<number, number | undefined, number | undefined>
+			name: ColumnType<string, string, string | undefined>
+			status: ColumnType<
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending' | undefined
+			>
 		}
 		toy: {
 			id: ColumnType<number, number | undefined, number | undefined>
@@ -247,6 +266,15 @@ function testMultiSchemaDatabase() {
 			species: ColumnType<string, string, string | undefined>
 			owner_id: ColumnType<number, number, number | undefined>
 		}
+		'public.statuses': {
+			id: ColumnType<number, number | undefined, number | undefined>
+			name: ColumnType<string, string, string | undefined>
+			status: ColumnType<
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending',
+				'active' | 'inactive' | 'pending' | undefined
+			>
+		}
 		'public.toy': {
 			id: ColumnType<number, number | undefined, number | undefined>
 			name: ColumnType<string, string, string | undefined>
@@ -325,6 +353,7 @@ function testMultiSchemaDatabase() {
 
 	expectType<IsEqual<Actual['person'], Expected['person']>>(true)
 	expectType<IsEqual<Actual['pet'], Expected['pet']>>(true)
+	expectType<IsEqual<Actual['statuses'], Expected['statuses']>>(true)
 	expectType<IsEqual<Actual['toy'], Expected['toy']>>(true)
 	expectType<IsEqual<Actual['person_owners'], Expected['person_owners']>>(true)
 	expectType<
