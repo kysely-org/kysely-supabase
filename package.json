@@ -38,7 +38,7 @@
     "check:exports": "attw --pack .",
     "check:types": "tsc --noEmit",
     "init:db": "supabase start && supabase db reset && supabase gen types typescript --local > schema.gen.ts",
-    "lint": "eslint src --ext .ts",
+    "lint": "biome check",
     "prepublishOnly": "biome check && pnpm build && pnpm check:exports",
     "test": "pnpm build && pnpm test:typings",
     "test:typings": "tsd tests/typings"
