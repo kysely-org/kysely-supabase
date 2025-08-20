@@ -4,14 +4,21 @@
   "description": "Kysely type translators for Supabase",
   "repository": "https://github.com/kysely-org/kysely-supabase.git",
   "homepage": "https://github.com/kysely-org/kysely-supabase",
-  "author": "Igal Klebanov <igalklebanov@gmail.com>",
+  "author": "Igal Klebanov <igalklebanov@gmail.com> (https://github.com/igalklebanov)",
   "license": "MIT",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "files": [
@@ -26,13 +33,14 @@
     "types"
   ],
   "scripts": {
-    "build": "tsup && node ./scripts/dist-fix.js",
+    "build": "tsup",
+    "check:exports": "attw --pack .",
     "clean": "rm -rf dist",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
     "init:db": "supabase start && supabase db reset && supabase gen types typescript --local > schema.gen.ts",
     "lint": "eslint src --ext .ts",
-    "prepack": "pnpm lint && pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm build && pnpm check:exports",
     "test": "pnpm build && pnpm test:typings",
     "test:typings": "tsd tests/typings",
     "type-check": "tsc --noEmit"
@@ -43,6 +51,7 @@
     "supabase": ">= 1.0.0 < 2"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
     "@supabase/supabase-js": "^2.55.0",
     "@tsconfig/node20": "^20.1.6",
     "@types/chai": "^5.2.2",
@@ -66,5 +75,5 @@
     "typescript": "^5.9.2"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
 }
