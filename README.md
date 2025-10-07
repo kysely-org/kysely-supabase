@@ -1,8 +1,21 @@
-# kysely-supabase
+![Kysely and Supabase mascots floating in the AI bubble created by a wonky open-source stack taped to PostgreSQL](./assets/banner.jpg)
+
+[![NPM Version](https://img.shields.io/npm/v/kysely-supabase?style=flat&label=latest)](https://github.com/kysely-org/kysely-supabase/releases/latest)
+[![Tests](https://github.com/kysely-org/kysely-supabase/actions/workflows/tests.yml/badge.svg)](https://github.com/kysely-org/kysely-supabase)
+[![License](https://img.shields.io/github/license/kysely-org/kysely-supabase?style=flat)](https://github.com/kysely-org/kysely-supabase/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues-closed/kysely-org/kysely-supabase?logo=github)](https://github.com/kysely-org/kysely-supabase/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+[![Pull Requests](https://img.shields.io/github/issues-pr-closed/kysely-org/kysely-supabase?label=PRs&logo=github&style=flat)](https://github.com/kysely-org/kysely-supabase/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
+![GitHub contributors](https://img.shields.io/github/contributors/kysely-org/kysely-supabase)
+[![Downloads](https://img.shields.io/npm/dw/kysely-supabase?logo=npm)](https://www.npmjs.com/package/kysely-supabase)
+
+###### Join the discussion ⠀⠀⠀⠀⠀⠀⠀
+
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=flat&logo=discord&logoColor=white)](https://discord.gg/xyBJ3GwvAm)
+[![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=flat&logo=Bluesky&logoColor=white)](https://bsky.app/profile/kysely.dev)
 
 Supabase is a combination of open-source tools. They're building the features of Firebase using enterprise-grade, open-source products. If the tools and communities exist, with an MIT, Apache 2, or equivalent open license, they will use and support that tool. If the tool doesn't exist, they build and open-source it themselves. Supabase is not a 1-to-1 mapping of Firebase. Their aim is to give developers a Firebase-like developer experience using open-source tools.
 
-As of Apr 6, 2024, `@supabase/supabase-js` (the client library) has 292,860 weekly downloads on npm, while `supabase` (the CLI) has 80,273 weekly downloads on npm. It is a popular all-in-one development platform for Node.js and TypeScript.
+As of Oct 7, 2025, `@supabase/supabase-js` (the client library) has 4,134,937 weekly downloads on npm, while `supabase` (the CLI) has 475,282 weekly downloads on npm. It is a popular all-in-one development platform for Node.js and TypeScript.
 
 Their CLI supports TypeScript type generation from your Supabase-managed PostgreSQL database, and their client library provides a nice, albeit restrictive, auto-completion friendly, and type-safe developer experience. For anything beyond what the client library's API offers, you're left with writing raw SQL and using PostgreSQL drivers like `pg` or `postgres`, or some abstraction where you codegen or define schema/types again.
 
@@ -38,10 +51,10 @@ Translate your Supabase-generated `Database` type to Kysely's `Database` interfa
 `src/types/database.ts`:
 
 ```ts
-import type {Database as SupabaseDatabase} from 'path/to/supabase/generated/types/file'
-import type {KyselifyDatabase} from 'kysely-supabase'
+import type { Database as SupabaseDatabase } from "path/to/supabase/generated/types/file";
+import type { KyselifyDatabase } from "kysely-supabase";
 
-export type Database = KyselifyDatabase<SupabaseDatabase>
+export type Database = KyselifyDatabase<SupabaseDatabase>;
 ```
 
 ### Kysely Instance
@@ -51,32 +64,32 @@ Create a Kysely instance. Pass to it your `Database` type.
 `src/kysely.ts`:
 
 ```ts
-import {Kysely, PostgresDialect} from 'kysely'
-import {Pool} from 'pg'
-import type {Database} from './types/database'
+import { Kysely, PostgresDialect } from "kysely";
+import { Pool } from "pg";
+import type { Database } from "./types/database";
 
 export const kysely = new Kysely<Database>({
-  dialect: new PostgresDialect({
-    pool: new Pool({
-      connectionString: process.env.DATABASE_URL,
-    }),
-  }),
-})
+	dialect: new PostgresDialect({
+		pool: new Pool({
+			connectionString: process.env.DATABASE_URL,
+		}),
+	}),
+});
 ```
 
 or when using `postgres` instead of `pg` as the underlying driver:
 
 ```ts
-import {Kysely} from 'kysely'
-import {PostgresJSDialect} from 'kysely-postgres-js'
-import postgres from 'postgres'
-import type {Database} from './types/database'
+import { Kysely } from "kysely";
+import { PostgresJSDialect } from "kysely-postgres-js";
+import postgres from "postgres";
+import type { Database } from "./types/database";
 
 export const kysely = new Kysely<Database>({
-  dialect: new PostgresJSDialect({
-    postgres: postgres(process.env.DATABASE_URL),
-  }),
-})
+	dialect: new PostgresJSDialect({
+		postgres: postgres(process.env.DATABASE_URL),
+	}),
+});
 ```
 
 ## Acknowledgements
