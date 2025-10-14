@@ -33,8 +33,8 @@ importers:
         specifier: ^8.5.0
         version: 8.5.0(typescript@5.9.3)
       type-fest:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.1.0
+        version: 5.1.0
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1317,8 +1317,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@5.0.1:
-    resolution: {integrity: sha512-9MpwAI52m8H6ssA542UxSLnSiSD2dsC3/L85g6hVubLSXd82wdI80eZwTWhdOfN67NlA+D+oipAs1MlcTcu3KA==}
+  type-fest@5.1.0:
+    resolution: {integrity: sha512-wQ531tuWvB6oK+pchHIu5lHe5f5wpSCqB8Kf4dWQRbOYc9HTge7JL0G4Qd44bh6QuJCccIzL3bugb8GI0MwHrg==}
     engines: {node: '>=20'}
 
   typescript@5.6.1-rc:
@@ -2500,7 +2500,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@5.0.1:
+  type-fest@5.1.0:
     dependencies:
       tagged-tag: 1.0.0
 
