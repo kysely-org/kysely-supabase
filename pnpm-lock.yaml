@@ -18,8 +18,8 @@ importers:
         specifier: ^24.0.3
         version: 24.0.3
       '@types/node':
-        specifier: ^25.0.0
-        version: 25.0.0
+        specifier: ^25.0.2
+        version: 25.0.2
       kysely:
         specifier: ^0.28.9
         version: 0.28.9
@@ -472,8 +472,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@25.0.0':
-    resolution: {integrity: sha512-rl78HwuZlaDIUSeUKkmogkhebA+8K1Hy7tddZuJ3D0xV8pZSfsYGTsliGUol1JPzu9EKnTxPC4L1fiWouStRew==}
+  '@types/node@25.0.2':
+    resolution: {integrity: sha512-gWEkeiyYE4vqjON/+Obqcoeffmk0NF15WSBwSs7zwVA2bAbTaE0SJ7P0WNGoJn8uE7fiaV5a7dKYIJriEqOrmA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1661,7 +1661,7 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@25.0.0':
+  '@types/node@25.0.2':
     dependencies:
       undici-types: 7.16.0
 
