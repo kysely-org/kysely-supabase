@@ -53,7 +53,7 @@
     "@tsconfig/node24": "^24.0.3",
     "@types/node": "^25.0.9",
     "kysely": "^0.28.10",
-    "supabase": "^2.72.7",
+    "supabase": "^2.72.8",
     "tsd": "^0.33.0",
     "tsup": "^8.5.1",
     "type-fest": "^5.4.1",
