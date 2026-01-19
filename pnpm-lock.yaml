@@ -24,8 +24,8 @@ importers:
         specifier: ^0.28.10
         version: 0.28.10
       supabase:
-        specifier: ^2.72.7
-        version: 2.72.7
+        specifier: ^2.72.8
+        version: 2.72.8
       tsd:
         specifier: ^0.33.0
         version: 0.33.0
@@ -1206,8 +1206,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  supabase@2.72.7:
-    resolution: {integrity: sha512-T7wEqqU+kCilZ9vQUBg7O0AhKKGQYOnuy9lb9c7YCpZ56emq0Nmn29RbaVq5nJnfOIxTfG4mPDuYukqRwO1SKg==}
+  supabase@2.72.8:
+    resolution: {integrity: sha512-3Wymv/QjmndLB9ACQA31VvJ7+KXmDqj7s8g7y+ldAcCaHBMbj+I7x0j/UBGkNbtSh0BG7kRicGA3Xc3jQlccNQ==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -1231,10 +1231,9 @@ packages:
     resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
     engines: {node: '>=20'}
 
-  tar@7.5.2:
-    resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
+  tar@7.5.3:
+    resolution: {integrity: sha512-ENg5JUHUm2rDD7IvKNFGzyElLXNjachNLp6RaGf4+JOgxXHkqA+gq81ZAMCUmtMtqBsoU62lcp6S27g1LCYGGQ==}
     engines: {node: '>=18'}
-    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -2368,12 +2367,12 @@ snapshots:
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
-  supabase@2.72.7:
+  supabase@2.72.8:
     dependencies:
       bin-links: 6.0.0
       https-proxy-agent: 7.0.6
       node-fetch: 3.3.2
-      tar: 7.5.2
+      tar: 7.5.3
     transitivePeerDependencies:
       - supports-color
 
@@ -2395,7 +2394,7 @@ snapshots:
 
   tagged-tag@1.0.0: {}
 
-  tar@7.5.2:
+  tar@7.5.3:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
