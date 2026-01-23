@@ -51,7 +51,7 @@
     "@arethetypeswrong/cli": "^0.18.2",
     "@biomejs/biome": "^2.3.11",
     "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^25.0.9",
+    "@types/node": "^25.0.10",
     "kysely": "^0.28.10",
     "supabase": "^2.72.8",
     "tsd": "^0.33.0",
