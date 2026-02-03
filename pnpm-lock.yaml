@@ -24,8 +24,8 @@ importers:
         specifier: ^0.28.11
         version: 0.28.11
       supabase:
-        specifier: ^2.74.5
-        version: 2.74.5
+        specifier: ^2.75.0
+        version: 2.75.0
       tsd:
         specifier: ^0.33.0
         version: 0.33.0
@@ -751,6 +751,7 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   globby@11.1.0:
@@ -1206,8 +1207,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  supabase@2.74.5:
-    resolution: {integrity: sha512-WKr5aZa4XHV9MgS6MvQWGDnVsK5A1TOswnJ1w8uCLDOpDyusmRwzaN3O1cIl7wX82xVmEZGaTHBitdbZwPb/qg==}
+  supabase@2.75.0:
+    resolution: {integrity: sha512-Xaai8Wp7F03OMkOWSyS1OMMdk5DxkauJxcMMesj4mO6jDGEZpWBwgo/gIUb4hsckexmr/RXYdpDpTbUIMXahbw==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -2367,7 +2368,7 @@ snapshots:
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
-  supabase@2.74.5:
+  supabase@2.75.0:
     dependencies:
       bin-links: 6.0.0
       https-proxy-agent: 7.0.6
