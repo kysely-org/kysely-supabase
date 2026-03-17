@@ -52,7 +52,7 @@
     "@biomejs/biome": "^2.4.6",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^25.5.0",
-    "kysely": "^0.28.11",
+    "kysely": "^0.28.12",
     "supabase": "^2.79.0",
     "tsd": "^0.33.0",
     "tsup": "^8.5.1",
