@@ -57,7 +57,7 @@
     "tsd": "^0.33.0",
     "tsup": "^8.5.1",
     "type-fest": "^5.5.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "sideEffects": false,
   "packageManager": "pnpm@10.18.1+sha512.77a884a165cbba2d8d1c19e3b4880eee6d2fcabd0d879121e282196b80042351d5eb3ca0935fa599da1dc51265cc68816ad2bddd2a2de5ea9fdf92adbec7cd34"
