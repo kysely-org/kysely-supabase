@@ -24,8 +24,8 @@ importers:
         specifier: ^0.28.15
         version: 0.28.15
       supabase:
-        specifier: ^2.84.10
-        version: 2.84.10
+        specifier: ^2.85.0
+        version: 2.85.0
       tsd:
         specifier: ^0.33.0
         version: 0.33.0
@@ -483,9 +483,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  agent-base@8.0.0:
-    resolution: {integrity: sha512-QT8i0hCz6C/KQ+KTAbSNwCHDGdmUJl2tp2ZpNlGSWCfhUNVbYG2WLE3MdZGBAgXPV4GAvjGMxo+C1hroyxmZEg==}
-    engines: {node: '>= 14'}
+  agent-base@9.0.0:
+    resolution: {integrity: sha512-TQf59BsZnytt8GdJKLPfUZ54g/iaUL2OWDSFCCvMOhsHduDQxO8xC4PNeyIkVcA5KwL2phPSv0douC0fgWzmnA==}
+    engines: {node: '>= 20'}
 
   ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
@@ -780,9 +780,9 @@ packages:
     resolution: {integrity: sha512-kyCuEOWjJqZuDbRHzL8V93NzQhwIB71oFWSyzVo+KPZI+pnQPPxucdkrOZvkLRnrf5URsQM+IJ09Dw29cRALIA==}
     engines: {node: '>=10'}
 
-  https-proxy-agent@8.0.0:
-    resolution: {integrity: sha512-YYeW+iCnAS3xhvj2dvVoWgsbca3RfQy/IlaNHHOtDmU0jMqPI9euIq3Y9BJETdxk16h9NHHCKqp/KB9nIMStCQ==}
-    engines: {node: '>= 14'}
+  https-proxy-agent@9.0.0:
+    resolution: {integrity: sha512-/MVmHp58WkOypgFhCLk4fzpPcFQvTJ/e6LBI7irpIO2HfxUbpmYoHF+KzipzJpxxzJu7aJNWQ0xojJ/dzV2G5g==}
+    engines: {node: '>= 20'}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -1203,8 +1203,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  supabase@2.84.10:
-    resolution: {integrity: sha512-XXitlCOQnsvAd56Rbv1ZsMmcV2SBNKelPO98KIxFC7CE8xECrAsAvUePqoI1+2KGdo5M6eAGmTEqhqZfe+47fQ==}
+  supabase@2.85.0:
+    resolution: {integrity: sha512-PjPIrHf8FDPtJefPtL0gvBC3LYltzzyt0s+8R9Y81DS4gINfg0fH1qPoNHgpfl/h1eTkSLYt1BhYIQRy3/alMQ==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -1666,7 +1666,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  agent-base@8.0.0: {}
+  agent-base@9.0.0: {}
 
   ansi-escapes@4.3.2:
     dependencies:
@@ -1958,9 +1958,9 @@ snapshots:
     dependencies:
       lru-cache: 6.0.0
 
-  https-proxy-agent@8.0.0:
+  https-proxy-agent@9.0.0:
     dependencies:
-      agent-base: 8.0.0
+      agent-base: 9.0.0
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
@@ -2362,10 +2362,10 @@ snapshots:
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
-  supabase@2.84.10:
+  supabase@2.85.0:
     dependencies:
       bin-links: 6.0.0
-      https-proxy-agent: 8.0.0
+      https-proxy-agent: 9.0.0
       node-fetch: 3.3.2
       tar: 7.5.13
     transitivePeerDependencies:
