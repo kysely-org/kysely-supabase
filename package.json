@@ -48,7 +48,7 @@
     "supabase": ">= 1.0.0 < 3"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.18.2",
+    "@arethetypeswrong/cli": "^0.18.3",
     "@biomejs/biome": "^2.4.16",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^25.9.1",
