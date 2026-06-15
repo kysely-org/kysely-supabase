@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.3",
-    "@biomejs/biome": "^2.4.16",
+    "@biomejs/biome": "^2.5.0",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^25.9.3",
     "kysely": "^0.29.2",
