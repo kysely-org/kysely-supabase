@@ -21,8 +21,8 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       kysely:
-        specifier: ^0.29.2
-        version: 0.29.2
+        specifier: ^0.29.3
+        version: 0.29.3
       supabase:
         specifier: ^2.109.0
         version: 2.109.0
@@ -884,8 +884,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  kysely@0.29.2:
-    resolution: {integrity: sha512-s6WVJyEZrbm6jhBpiKHsGHyePMrVQKJ85wZCFCr9W4QHv6WTjWIrdvTmO9hDEA3bNK0xkrE2DqrHsXMLWuZpQg==}
+  kysely@0.29.3:
+    resolution: {integrity: sha512-VHtBdW6XB/pgoTSqraM3UAa2rYoYdNXqnNPpX+8XXP+cwYbVEFuAp3HyPt1vpNfU9l7Y2kpUrA9QDPsy8uUqOQ==}
     engines: {node: '>=22.0.0'}
 
   lilconfig@3.1.3:
@@ -2010,7 +2010,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  kysely@0.29.2: {}
+  kysely@0.29.3: {}
 
   lilconfig@3.1.3: {}
 
