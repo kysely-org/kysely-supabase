@@ -51,10 +51,10 @@ Translate your Supabase-generated `Database` type to Kysely's `Database` interfa
 `src/types/database.ts`:
 
 ```ts
-import type { Database as SupabaseDatabase } from "path/to/supabase/generated/types/file";
-import type { KyselifyDatabase } from "kysely-supabase";
+import type { Database as SupabaseDatabase } from 'path/to/supabase/generated/types/file'
+import type { KyselifyDatabase } from 'kysely-supabase'
 
-export type Database = KyselifyDatabase<SupabaseDatabase>;
+export type Database = KyselifyDatabase<SupabaseDatabase>
 ```
 
 ### Kysely Instance
@@ -64,9 +64,9 @@ Create a Kysely instance. Pass to it your `Database` type.
 `src/kysely.ts`:
 
 ```ts
-import { Kysely, PostgresDialect } from "kysely";
-import { Pool } from "pg";
-import type { Database } from "./types/database";
+import { Kysely, PostgresDialect } from 'kysely'
+import { Pool } from 'pg'
+import type { Database } from './types/database'
 
 export const kysely = new Kysely<Database>({
 	dialect: new PostgresDialect({
@@ -74,22 +74,22 @@ export const kysely = new Kysely<Database>({
 			connectionString: process.env.DATABASE_URL,
 		}),
 	}),
-});
+})
 ```
 
 or when using `postgres` instead of `pg` as the underlying driver:
 
 ```ts
-import { Kysely } from "kysely";
-import { PostgresJSDialect } from "kysely-postgres-js";
-import postgres from "postgres";
-import type { Database } from "./types/database";
+import { Kysely } from 'kysely'
+import { PostgresJSDialect } from 'kysely-postgres-js'
+import postgres from 'postgres'
+import type { Database } from './types/database'
 
 export const kysely = new Kysely<Database>({
 	dialect: new PostgresJSDialect({
 		postgres: postgres(process.env.DATABASE_URL),
 	}),
-});
+})
 ```
 
 ## Acknowledgements

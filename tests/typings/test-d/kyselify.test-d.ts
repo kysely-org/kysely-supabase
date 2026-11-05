@@ -56,7 +56,7 @@ function testSingleSchemaDatabase() {
 	} & {
 		person_owners: {
 			id: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
@@ -76,7 +76,7 @@ function testSingleSchemaDatabase() {
 				string | null | undefined
 			>
 			gender: ColumnType<
-				string | null,
+				string,
 				string | null | undefined,
 				string | null | undefined
 			>
@@ -86,19 +86,19 @@ function testSingleSchemaDatabase() {
 				string | null | undefined
 			>
 			children: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
 		}
 		person_owners_and_num_of_pets: {
-			id: ColumnType<number | null, never, never>
+			id: ColumnType<number, never, never>
 			first_name: ColumnType<string | null, never, never>
 			middle_name: ColumnType<string | null, never, never>
 			last_name: ColumnType<string | null, never, never>
-			gender: ColumnType<string | null, never, never>
+			gender: ColumnType<string, never, never>
 			marital_status: ColumnType<string | null, never, never>
-			children: ColumnType<number | null, never, never>
+			children: ColumnType<number, never, never>
 			num_of_pets: ColumnType<number | null, never, never>
 		}
 	}
@@ -189,7 +189,7 @@ function testMultiSchemaDatabase() {
 	} & {
 		person_owners: {
 			id: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
@@ -209,7 +209,7 @@ function testMultiSchemaDatabase() {
 				string | null | undefined
 			>
 			gender: ColumnType<
-				string | null,
+				string,
 				string | null | undefined,
 				string | null | undefined
 			>
@@ -219,19 +219,19 @@ function testMultiSchemaDatabase() {
 				string | null | undefined
 			>
 			children: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
 		}
 		person_owners_and_num_of_pets: {
-			id: ColumnType<number | null, never, never>
+			id: ColumnType<number, never, never>
 			first_name: ColumnType<string | null, never, never>
 			middle_name: ColumnType<string | null, never, never>
 			last_name: ColumnType<string | null, never, never>
-			gender: ColumnType<string | null, never, never>
+			gender: ColumnType<string, never, never>
 			marital_status: ColumnType<string | null, never, never>
-			children: ColumnType<number | null, never, never>
+			children: ColumnType<number, never, never>
 			num_of_pets: ColumnType<number | null, never, never>
 		}
 	} & {
@@ -282,7 +282,7 @@ function testMultiSchemaDatabase() {
 		}
 		'public.person_owners': {
 			id: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
@@ -302,7 +302,7 @@ function testMultiSchemaDatabase() {
 				string | null | undefined
 			>
 			gender: ColumnType<
-				string | null,
+				string,
 				string | null | undefined,
 				string | null | undefined
 			>
@@ -312,19 +312,19 @@ function testMultiSchemaDatabase() {
 				string | null | undefined
 			>
 			children: ColumnType<
-				number | null,
+				number,
 				number | null | undefined,
 				number | null | undefined
 			>
 		}
 		'public.person_owners_and_num_of_pets': {
-			id: ColumnType<number | null, never, never>
+			id: ColumnType<number, never, never>
 			first_name: ColumnType<string | null, never, never>
 			middle_name: ColumnType<string | null, never, never>
 			last_name: ColumnType<string | null, never, never>
-			gender: ColumnType<string | null, never, never>
+			gender: ColumnType<string, never, never>
 			marital_status: ColumnType<string | null, never, never>
-			children: ColumnType<number | null, never, never>
+			children: ColumnType<number, never, never>
 			num_of_pets: ColumnType<number | null, never, never>
 		}
 		'my_schema.toy': {

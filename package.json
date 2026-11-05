@@ -37,7 +37,7 @@
     "build": "tsup",
     "check:exports": "attw --pack .",
     "check:types": "tsc --noEmit",
-    "init:db": "supabase start && supabase db reset && supabase gen types typescript --local > schema.gen.ts",
+    "init:db": "supabase start && supabase db reset && supabase gen types typescript > schema.gen.ts",
     "lint": "biome check",
     "prepublishOnly": "biome check && pnpm build && pnpm check:exports",
     "test": "pnpm build && pnpm test:typings",
@@ -45,19 +45,19 @@
   },
   "peerDependencies": {
     "kysely": ">= 0.24.0 < 1",
-    "supabase": ">= 1.0.0 < 3"
+    "supabase": ">= 1.0.0 < 4"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.18.4",
-    "@biomejs/biome": "^2.5.3",
-    "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^26.1.1",
-    "kysely": "^0.29.3",
-    "supabase": "^2.109.1",
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@biomejs/biome": "^2.6.5",
+    "@tsconfig/node24": "^24.0.5",
+    "@types/node": "^26.6.6",
+    "kysely": "^0.29.8",
+    "supabase": "^3.0.0",
     "tsd": "^0.33.0",
-    "tsup": "^8.5.1",
-    "type-fest": "^5.8.0",
-    "typescript": "^5.9.3"
+    "tsup": "^9.0.0",
+    "type-fest": "^5.10.0",
+    "typescript": "^6.0.3"
   },
   "sideEffects": false,
   "packageManager": "pnpm@10.18.1+sha512.77a884a165cbba2d8d1c19e3b4880eee6d2fcabd0d879121e282196b80042351d5eb3ca0935fa599da1dc51265cc68816ad2bddd2a2de5ea9fdf92adbec7cd34"

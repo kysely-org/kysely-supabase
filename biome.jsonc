@@ -9,6 +9,11 @@
 			"semicolons": "asNeeded"
 		}
 	},
+	"yaml": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	},
 	"linter": {
 		"rules": {
 			"nursery": {},
